@@ -19,13 +19,58 @@
                 <li class="nav-item"><a data-toggle="tab" class="nav-link slider_li" href="#hobby2">Group Activities</a></li>
             </ul>
         </div>
-        <div class="tab-content">
-            <div id="edu" class="tab-pane active"><h1 class="slider_heading">Councelling and Therapy</h1><img src="images/pexels-alex-green-5699431-1024x683.jpg" class="slider_img" alt="Counselling"></div>
-            <div id="skills" class="tab-pane fade"><h1 class="slider_heading">Case management</h1><img src="images/pexels-christina-morillo-1181712-1024x683.jpg" class="slider_img" alt="Case management"></div>
-            <div id="hobby" class="tab-pane fade"><h1 class="slider_heading">Peer support</h1><img src="images/pexels-mentatdgt-1311518-1024x682.jpg" class="slider_img" alt="Peer support"></div>
-            <div id="hobby1" class="tab-pane fade"><h1 class="slider_heading">Cbrs</h1><img src="images/pexels-polina-zimmerman-3958375-1024x682.jpg" class="slider_img" alt="Cbrs"></div>
-            <div id="hobby2" class="tab-pane fade"><h1 class="slider_heading">Group Activities</h1><img src="images/pexels-rodnae-productions-7551766-1-1024x682.jpg" class="slider_img" alt="Group Activities"></div>                
+        <div class="tab-content slide_show" id="sliderImage">
+        <div class="card_box">
+          <div class="top-of__box">
+            <div class="box_nav active" id="nav__link__1" onclick="changeBGi()">
+              Drive or deliver
+            </div>
+            <div class="box_nav" id="nav__link__2" onclick="changeBGii()">
+              Eat
+            </div>
+            <div class="box_nav" id="nav__link__3" onclick="changeBGiii()">
+              Ride
+            </div>
+          </div>
+          <div class="body__box">
+            <h1>Get in the driver’s seat and get paid</h1>
+            <p>
+              Drive on the platform with the largest network of active riders.
+            </p>
+            <a href="#">Sign up to Drive</a>
+            <p class="te_more">Learn more about driving and delivering</p>
+          </div>
         </div>
+        <div></div>
+      </div>
+    </div>
+
+    <script>
+      function changeBGi() {
+        document.querySelector("#sliderImage").classList.add("img_1");
+        document.querySelector("#sliderImage").classList.remove("img_2");
+        document.querySelector("#sliderImage").classList.remove("img_3");
+        document.querySelector("#nav__link__1").classList.add("active");
+        document.querySelector("#nav__link__2").classList.remove("active");
+        document.querySelector("#nav__link__3").classList.remove("active");
+      }
+      function changeBGii() {
+        document.querySelector("#sliderImage").classList.add("img_2");
+        document.querySelector("#sliderImage").classList.remove("img_1");
+        document.querySelector("#sliderImage").classList.remove("img_3");
+        document.querySelector("#nav__link__2").classList.add("active");
+        document.querySelector("#nav__link__1").classList.remove("active");
+        document.querySelector("#nav__link__3").classList.remove("active");
+      }
+      function changeBGiii() {
+        document.querySelector("#sliderImage").classList.add("img_3");
+        document.querySelector("#sliderImage").classList.remove("img_2");
+        document.querySelector("#sliderImage").classList.remove("img_1");
+        document.querySelector("#nav__link__3").classList.add("active");
+        document.querySelector("#nav__link__2").classList.remove("active");
+        document.querySelector("#nav__link__1").classList.remove("active");
+      }
+    </script>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
