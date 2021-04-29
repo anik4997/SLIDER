@@ -24,3 +24,71 @@ ul li a:focus{
     height: 430px;
     width: 100%;
 }
+
+/* my codes */
+.tab-content {
+    background-image: url(./images/pexels-alex-green-5699431-1024x683.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 56.25vw;
+    padding: 100px;
+}
+.tab-content.img_1 {
+    background-image: url(./images/pexels-alex-green-5699431-1024x683.jpg) !important;
+}
+.tab-content.img_2 {
+    background-image: url(./images/pexels-christina-morillo-1181712-1024x683.jpg) !important;
+}
+.tab-content.img_3 {
+    background-image: url(./images/pexels-mentatdgt-1311518-1024x682.jpg) !important;
+}
+
+.tab-content.slide_show {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.tab-content.slide_show .card_box .top-of__box {
+    background-color: #FCFCFC;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 1px #EBECEA;
+}
+
+.tab-content.slide_show .card_box .top-of__box .box_nav {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.tab-content.slide_show .card_box .top-of__box .box_nav.active {
+    border-bottom: solid 4px black;
+}
+
+.tab-content.slide_show .card_box .body__box{
+    background-color: #fff;
+    padding: 48px;
+}
+
+.tab-content.slide_show .card_box .body__box h1{
+    font-size: 3rem !important;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.tab-content.slide_show .card_box .body__box a{
+    font-size: 2rem !important;
+    font-weight: 600;
+    padding: 20px;
+    color: #fff;
+    background-color: black;
+    margin: 25px 0 !important;
+}
+
+.tab-content.slide_show .card_box .body__box .te_more{
+    margin-top: 20px;
+}
