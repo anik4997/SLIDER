@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-tabs .nav-link{
+    border: none;     
+}
+.slider_li{
+    padding: 30px 25px;
+    color: black;
+    font-weight: 500;  
+}
+ul li a:focus{
+    border-bottom: 5px solid black;
+}
+.slider_li:hover{
+    color: rgb(121, 113, 113);
+}
+.slider_heading{
+    padding: 30px 20px;
+    font-weight: 600;
+}
+.slider_img{
+    height: 430px;
+    width: 100%;
+}
